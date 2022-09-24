@@ -1,0 +1,50 @@
+print('Курс Основы программирования начался')
+
+count = 16823 * 12302 / 3092
+print('Ответ:', count)
+
+name = 'Степан' 
+age = 10
+if name != 'Иван' and (age > 15 and age < 75):
+    print('Поздравляем вы поступили в ВГУИТ')
+elif name == 'Иван':
+    print('Вас зовут Иван')
+else:
+    print('Сначала нужно окончить школу! Осталось учиться', 16 - age, 'лет')
+
+seconds = 2056
+minute = 0
+hour = 0
+day = 0
+if seconds > 60:
+    minute = seconds // 60
+    seconds = seconds % 60
+    if minute > 60:
+        hour = minute // 60
+        minute = minute % 60
+        if hour > 24:
+            day = hour // 24
+            hour = hour % 24
+            print(day, ':', hour, ':', minute, ':', seconds)
+        else:
+            print(day, ':', hour, ':', minute, ':', seconds)
+    else:
+        print(day, ':', hour, ':', minute, ':', seconds)
+else:
+    print(day, ':', hour, ':', minute, ':', seconds)
+
+n = 10
+print('Ответ:', n + n ** 2 + n ** 3 + n ** 4 + n ** 5)
+
+x = 1
+y = 0
+c = y
+y = x
+x = c
+print(x, y)
+
+number = 3
+if number % 2 != 1:
+    print('number чётное число')
+else:
+    print('number нечётное число')
