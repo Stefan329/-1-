@@ -1,0 +1,81 @@
+print('Задача 1')
+a, b, c = int(input()), int(input()), int(input())
+print('Ответ:', a + b + c)
+
+print('Задача 2')
+a, b = float(input()), float(input())
+print('Ответ:', 1 / 2 * a * b)
+
+print('Задача 3')
+n = int(input())
+c = 0
+if n > 60:
+    c = n // 60
+    n = n % 60
+while c >= 24:
+    c = c - 24
+print(c, ':', n)
+
+print('Задания 4 - 9')
+def f(a, b, l, N):
+    return 2 * l + (2 * N - 1) * a + 2 * (N - 1) * b
+
+
+def g(x, y, c):
+    if x >= y and x >= c:
+        if y > c:
+            return c
+        else:
+            return y
+    elif y >= x and y >= c:
+        if c > x:
+            return x
+        else:
+            return c
+    elif c >= x and c >= y:
+        if  y > x:
+            return x
+        else:
+            return y
+
+
+def h(x1, y1, x2, y2):
+    if (x1 % 2 == 0 and y1 % 2 == 0) and (x2 % 2 == 1 and y2 % 2 == 1):
+        return print('Да')
+    elif (x1 % 2 == 1 and y1 % 2 == 1) and (x2 % 2 == 0 and y2 % 2 == 0):
+        return print('Да')
+    elif (x1 % 2 == 1 and y1 % 2 == 1) and (x2 % 2 == 1 and y2 % 2 == 1):
+        return print('Да')
+    elif (x1 % 2 == 0 and y1 % 2 == 0) and (x2 % 2 == 0 and y2 % 2 == 0):
+        return print('Да')
+    elif (x1 % 2 == 1 and y1 % 2 == 0) and (x2 % 2 == 1 and y2 % 2 == 0):
+        return print('Да')
+    elif (x1 % 2 == 0 and y1 % 2 == 1) and (x2 % 2 == 0 and y2 % 2 == 1):
+        return print('Да')    
+    else:
+        return print('Нет')
+    
+
+def o(i):
+    if i % 4 == 0 and i % 100 != 0:
+        return print('Да')
+    elif i % 400 == 0:
+        return print('Да')
+    else:
+        return print('Нет')
+
+
+def l(x, y, z):
+    if x == y and x == z:
+        return print('3')
+    elif x == y or x == z or y == z:
+        return print('2')
+    else:
+        return print('0')
+    
+    
+def p(n, m, k):
+    if k < n * m and ((k % n == 0) or (k % m == 0)):
+        print('Да')
+    else:
+        print('Нет')    
