@@ -1,0 +1,11 @@
+s = input()
+cat = 0
+k = len(s)
+if s[0] == 'Е' or s[0] == 'е':
+    cat += 1
+for i in range(k):
+    if s[i] == ' ' and s[i + 1] == 'е':
+        cat = cat + 1
+    elif s[i] == ' ' and s[i + 1] == 'Е':
+        cat = cat + 1
+print(cat)
