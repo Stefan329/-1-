@@ -1,0 +1,20 @@
+seconds = int(input())
+minute = 0
+hour = 0
+day = 0
+if seconds > 60:
+    minute = seconds // 60
+    seconds = seconds % 60
+    if minute > 60:
+        hour = minute // 60
+        minute = minute % 60
+        if hour > 24:
+            day = hour // 24
+            hour = hour % 24
+            print(day, ':', hour, ':', minute, ':', seconds)
+        else:
+            print(day, ':', hour, ':', minute, ':', seconds)
+    else:
+        print(day, ':', hour, ':', minute, ':', seconds)
+else:
+    print(day, ':', hour, ':', minute, ':', seconds)
