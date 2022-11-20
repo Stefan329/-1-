@@ -1,5 +1,5 @@
-name = 'Степан'
-age = 10
+name = input()
+age = int(input())
 if name != 'Иван' and (age > 15 and age < 75):
     print('Поздравляем вы поступили в ВГУИТ')
 elif name == 'Иван':
