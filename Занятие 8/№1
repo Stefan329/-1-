@@ -1,0 +1,18 @@
+import math
+
+figura = input('Введите название фигуры = ')
+S = 0
+if figura == 'треугольник':
+    a = float(input('Введите первую сторону: '))
+    b = float(input('Введите вторую сторону: '))
+    c = float(input('Введите третью сторону: '))
+    p = (a + b + c) / 2
+    S = math.sqrt((p * (p - a) * (p - b) * (p - c)))
+elif figura == 'прямоугольник':
+    a = float(input('Введите длину: '))
+    b = float(input('Введите ширину: '))
+    S = a * b
+elif figura == 'круг':
+    r = float(input('Введите радиус: '))
+    S = math.pi * (r ** 2)
+print(S)
