@@ -1,0 +1,15 @@
+import random
+
+
+def hit(n, m):
+    b = [[random.randrange(10) for _ in range(m)] for _ in range(n)]
+    for i, car in enumerate(b):
+        Maxim = 0
+        Mina = 0
+        for j, elem in enumerate(car):
+            if elem > car[Maxim]:
+                Maxim = j
+            if elem < car[Mina]:
+                Mina = j
+    print(car[min])
+    print(car[max])
