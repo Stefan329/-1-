@@ -4,13 +4,13 @@ import random
 def g(n):
     per = 0
     s = 0
-    aar = []
+    cat = []
     a = [[random.randrange(10) for _ in range(n)] for _ in range(n)]
-    for row in range(n):
-        for col in range(row + 1, n):
-            s += a[row][col]
-    for row in range(n):
-        aar.append(input())
+    for lon in range(n):
+        for jon in range(lon + 1, n):
+            s += a[lon][jon]
+    for lon in range(n):
+        cat.append(input())
         if n > 0:
             per += 1
     print('Сумма:', s)
