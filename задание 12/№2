@@ -1,0 +1,12 @@
+def fin(cat):
+    n = int(input())
+    pop = 0
+    while n != 0:
+        if n > pop:
+            pop = n
+        n = int(input())
+    return pop
+    print(cat)
+
+
+print(fin(1))
